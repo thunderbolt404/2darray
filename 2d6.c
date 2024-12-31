@@ -16,7 +16,7 @@ int main()
     }
     for (int i = 0; i < n; i++){
         for (int j = 0; j < n; j++){
-            if(trans[j][i]!=mat[i][j]){
+            if(trans[i][j]!=mat[i][j]){
                 isSymm=0;
                 break;
             }
@@ -29,11 +29,7 @@ int main()
         }
         printf("\n");
     }
-    if(isSymm){
-        printf("Yes,Symmetric");
-    }
-    else{
-        printf("Not symmetric");
-    }
+    if(isSymm) printf("Yes,Symmetric");
+    else printf("Not symmetric");
         return 0;
 }
