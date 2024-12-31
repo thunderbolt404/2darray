@@ -24,12 +24,10 @@ int main()
     }
     printf("Transpose:\n");
     for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-            printf("%d ",trans[i][j]);
-        }
+        for(int j=0;j<n;j++)printf("%d ",trans[i][j]);
         printf("\n");
     }
     if(isSymm) printf("Yes,Symmetric");
     else printf("Not symmetric");
-        return 0;
+    return 0;
 }
