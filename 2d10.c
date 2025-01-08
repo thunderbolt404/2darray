@@ -7,20 +7,15 @@ int main() {
     int mat[n][n];
     printf("Enter the elements of the square matrix:\n");
     for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-            scanf("%d",&mat[i][j]);
-        }
+        for(int j=0;j<n;j++)scanf("%d",&mat[i][j]);
     }
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
             if(i>=j){
                 printf("%d ",mat[i][j]);
                 sum+=mat[i][j];
-
             }
-            else{
-                printf("0 ");
-            }
+            else printf("0 ");
         }
         printf("\n");
     }
